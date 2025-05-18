@@ -1,3 +1,3 @@
 use crate::ast::*;
 
-pub fn tokenise() -> Sheet {}
+pub fn tokenize() -> Sheet {}
