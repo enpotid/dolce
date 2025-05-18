@@ -175,3 +175,7 @@ pub enum Note {
 pub type Duration = u32;
 pub type Hertz = u16;
 pub type Volume = u8;
+
+impl Note {
+    pub fn from(note: &str) -> Option<Self> {}
+}
