@@ -103,5 +103,5 @@ pub fn tokenize(src: String) -> Sheet {
 }
 
 fn elog(line: usize, msg: &str) {
-    println!("\033[31mLine {}\033[0m\n{}", line, msg);
+    println!("\x1b[31mLine {}:\x1b[0m\n {}", line, msg);
 }
