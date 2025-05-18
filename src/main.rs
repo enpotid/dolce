@@ -14,7 +14,7 @@ fn main() {
         return;
     }
 
-    let contents = match fs::read_to_string(&args[1]) {
+    let src = match fs::read_to_string(&args[1]) {
         Ok(f) => f,
         Err(_) => {
             println!("can't read file");
@@ -23,7 +23,7 @@ fn main() {
         }
     };
 
-    let sheet = lexer::tokenize(contents);
+    let sheet = lexer::tokenize(src);
     let music = parse::parse(sheet);
     run::run(music);
 }

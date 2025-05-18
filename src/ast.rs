@@ -19,8 +19,6 @@ pub enum Symbol {
     Label(String),
     Dal(String),
     DaCapo,
-    DalSegno,
-    Segno,
     Fine,
     SRepeat,
     ERepeat,
