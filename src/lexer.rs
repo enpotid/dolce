@@ -8,6 +8,10 @@ pub fn tokenize(src: String) -> Sheet {
     for line in src_iter {
         li += 1;
 
+        if line.trim() == "" {
+            continue;
+        }
+
         if line.len() < 2 {
             elog(li, "Each line must contain at least 2 characters.");
             continue;
