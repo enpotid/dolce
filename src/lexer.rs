@@ -18,23 +18,22 @@ pub fn tokenize(src: String) -> Sheet {
         }
 
         match line {
-            "|:" => {
-                lines.push(Line::Symbol(Symbol::SRepeat));
-            }
-            ":|" => {
-                lines.push(Line::Symbol(Symbol::ERepeat));
-            }
-            "D.C." => {
-                lines.push(Line::Symbol(Symbol::DaCapo));
-            }
-            "Fine" => {
-                lines.push(Line::Symbol(Symbol::Fine));
-            }
+            "|:" => lines.push(Line::Symbol(Symbol::SRepeat)),
+            ":|" => lines.push(Line::Symbol(Symbol::ERepeat)),
+            "D.C." => lines.push(Line::Symbol(Symbol::DaCapo)),
+            "D.C. al Fine" => lines.push(Line::Symbol(Symbol::DaCapoAlFine)),
+            "Fine" => lines.push(Line::Symbol(Symbol::Fine)),
             _ if line[..1] == *";" => {
                 continue;
             }
             _ if line.len() > 4 && line[..4] == *"Dal " => {
-                lines.push(Line::Symbol(Symbol::Dal(line[4..].to_string())));
+                if line.len() > 12 && line[line.len() - 8..] == *" al Fine" {
+                    lines.push(Line::Symbol(Symbol::DalAlFine(
+                        line[4..line.len() - 8].to_string(),
+                    )));
+                } else {
+                    lines.push(Line::Symbol(Symbol::Dal(line[4..].to_string())));
+                }
             }
             _ if line.chars().last().unwrap() == ':' => {
                 lines.push(Line::Symbol(Symbol::Label(

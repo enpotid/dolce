@@ -18,7 +18,9 @@ pub enum Line {
 pub enum Symbol {
     Label(String),
     Dal(String),
+    DalAlFine(String),
     DaCapo,
+    DaCapoAlFine,
     Fine,
     SRepeat,
     ERepeat,
