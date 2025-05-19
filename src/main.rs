@@ -1,6 +1,7 @@
 mod ast;
 mod lexer;
 mod parse;
+mod play;
 mod run;
 
 use std::env;
@@ -25,6 +26,5 @@ fn main() {
 
     let sheet = lexer::tokenize(src);
     let music = parse::parse(sheet);
-    println!("{:#?}", music);
-    run::run(music);
+    play::play(music);
 }
