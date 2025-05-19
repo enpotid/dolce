@@ -1,105 +1,267 @@
-Sheet {
-    lines: [
-        Sound(
-            Sound {
-                chord: [
-                    E4,
-                ],
-                duration: 300,
-                volume: 255,
-            },
-        ),
-        Sound(
-            Sound {
-                chord: [
-                    Gs4,
-                ],
-                duration: 300,
-                volume: 255,
-            },
-        ),
-        Sound(
-            Sound {
-                chord: [
-                    A4,
-                ],
-                duration: 300,
-                volume: 255,
-            },
-        ),
-        Sound(
-            Sound {
-                chord: [
-                    B4,
-                ],
-                duration: 300,
-                volume: 255,
-            },
-        ),
-        Sound(
-            Sound {
-                chord: [
-                    A4,
-                ],
-                duration: 300,
-                volume: 255,
-            },
-        ),
-        Symbol(
-            Label(
-                "Label",
-            ),
-        ),
-        Sound(
-            Sound {
-                chord: [
-                    Gs4,
-                ],
-                duration: 300,
-                volume: 255,
-            },
-        ),
-        Sound(
-            Sound {
-                chord: [
-                    Fs4,
-                ],
-                duration: 300,
-                volume: 255,
-            },
-        ),
-        Sound(
-            Sound {
-                chord: [
-                    E4,
-                ],
-                duration: 600,
-                volume: 255,
-            },
-        ),
-        Sound(
-            Sound {
-                chord: [
-                    E4,
-                    A3,
-                ],
-                duration: 600,
-                volume: 255,
-            },
-        ),
-        Symbol(
-            Fine,
-        ),
-        Symbol(
-            DaCapo,
-        ),
-        Symbol(
-            DalAlFine(
-                "Label",
-            ),
-        ),
-        Symbol(
-            DaCapoAlFine,
-        ),
+Music {
+    sounds: [
+        Sound {
+            chord: [
+                E4,
+            ],
+            duration: 300,
+            volume: 255,
+        },
+        Sound {
+            chord: [
+                Gs4,
+            ],
+            duration: 300,
+            volume: 255,
+        },
+        Sound {
+            chord: [
+                A4,
+            ],
+            duration: 300,
+            volume: 255,
+        },
+        Sound {
+            chord: [
+                B4,
+            ],
+            duration: 300,
+            volume: 255,
+        },
+        Sound {
+            chord: [
+                A4,
+            ],
+            duration: 300,
+            volume: 255,
+        },
+        Sound {
+            chord: [
+                B4,
+            ],
+            duration: 300,
+            volume: 255,
+        },
+        Sound {
+            chord: [
+                A4,
+            ],
+            duration: 300,
+            volume: 255,
+        },
+        Sound {
+            chord: [
+                Gs4,
+            ],
+            duration: 300,
+            volume: 255,
+        },
+        Sound {
+            chord: [
+                Fs4,
+            ],
+            duration: 300,
+            volume: 255,
+        },
+        Sound {
+            chord: [
+                E4,
+            ],
+            duration: 600,
+            volume: 255,
+        },
+        Sound {
+            chord: [
+                E4,
+                A3,
+            ],
+            duration: 600,
+            volume: 255,
+        },
+        Sound {
+            chord: [
+                E4,
+            ],
+            duration: 300,
+            volume: 255,
+        },
+        Sound {
+            chord: [
+                Gs4,
+            ],
+            duration: 300,
+            volume: 255,
+        },
+        Sound {
+            chord: [
+                A4,
+            ],
+            duration: 300,
+            volume: 255,
+        },
+        Sound {
+            chord: [
+                B4,
+            ],
+            duration: 300,
+            volume: 255,
+        },
+        Sound {
+            chord: [
+                A4,
+            ],
+            duration: 300,
+            volume: 255,
+        },
+        Sound {
+            chord: [
+                B4,
+            ],
+            duration: 300,
+            volume: 255,
+        },
+        Sound {
+            chord: [
+                A4,
+            ],
+            duration: 300,
+            volume: 255,
+        },
+        Sound {
+            chord: [
+                Gs4,
+            ],
+            duration: 300,
+            volume: 255,
+        },
+        Sound {
+            chord: [
+                Fs4,
+            ],
+            duration: 300,
+            volume: 255,
+        },
+        Sound {
+            chord: [
+                E4,
+            ],
+            duration: 600,
+            volume: 255,
+        },
+        Sound {
+            chord: [
+                E4,
+                A3,
+            ],
+            duration: 600,
+            volume: 255,
+        },
+        Sound {
+            chord: [
+                Gs4,
+            ],
+            duration: 300,
+            volume: 255,
+        },
+        Sound {
+            chord: [
+                Fs4,
+            ],
+            duration: 300,
+            volume: 255,
+        },
+        Sound {
+            chord: [
+                E4,
+            ],
+            duration: 600,
+            volume: 255,
+        },
+        Sound {
+            chord: [
+                E4,
+                A3,
+            ],
+            duration: 600,
+            volume: 255,
+        },
+        Sound {
+            chord: [
+                E4,
+            ],
+            duration: 300,
+            volume: 255,
+        },
+        Sound {
+            chord: [
+                Gs4,
+            ],
+            duration: 300,
+            volume: 255,
+        },
+        Sound {
+            chord: [
+                A4,
+            ],
+            duration: 300,
+            volume: 255,
+        },
+        Sound {
+            chord: [
+                B4,
+            ],
+            duration: 300,
+            volume: 255,
+        },
+        Sound {
+            chord: [
+                A4,
+            ],
+            duration: 300,
+            volume: 255,
+        },
+        Sound {
+            chord: [
+                B4,
+            ],
+            duration: 300,
+            volume: 255,
+        },
+        Sound {
+            chord: [
+                A4,
+            ],
+            duration: 300,
+            volume: 255,
+        },
+        Sound {
+            chord: [
+                Gs4,
+            ],
+            duration: 300,
+            volume: 255,
+        },
+        Sound {
+            chord: [
+                Fs4,
+            ],
+            duration: 300,
+            volume: 255,
+        },
+        Sound {
+            chord: [
+                E4,
+            ],
+            duration: 600,
+            volume: 255,
+        },
+        Sound {
+            chord: [
+                E4,
+                A3,
+            ],
+            duration: 600,
+            volume: 255,
+        },
     ],
 }

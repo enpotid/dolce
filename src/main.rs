@@ -24,7 +24,7 @@ fn main() {
     };
 
     let sheet = lexer::tokenize(src);
-    println!("{:#?}", sheet);
     let music = parse::parse(sheet);
+    println!("{:#?}", music);
     run::run(music);
 }
