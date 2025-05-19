@@ -175,7 +175,7 @@ pub enum Note {
 }
 
 pub type Duration = u32;
-pub type Hertz = u16;
+pub type Hertz = f32;
 pub type Volume = u8;
 
 impl Note {
@@ -322,7 +322,7 @@ impl Note {
         }
     }
 
-    pub fn hertz(&self) -> f32 {
+    pub fn hertz(&self) -> Hertz {
         match self {
             Self::C0 => 16.352,
             Self::Cs0 | Self::Df0 => 17.324,
