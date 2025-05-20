@@ -54,48 +54,30 @@ fn parse_lines(
                 Symbol::Dal(label) => {
                     if let Some(&li) = labels.get(label) {
                         if li > i {
-                            if parse_lines(
-                                sheet,
-                                sounds,
-                                labels,
-                                repeats,
-                                false,
-                                li,
-                                sheet.lines.len(),
-                            ) {
-                                return true;
-                            };
+                            elog(i + 1, "Can't find label earlier in the code.");
+                            exit(1);
                         } else {
                             if parse_lines(sheet, sounds, labels, repeats, false, li, i) {
                                 return true;
                             };
                         }
                     } else {
-                        elog(i + 1, "Can't find label");
+                        elog(i + 1, "Can't find label earlier in the code.");
                         exit(1);
                     }
                 }
                 Symbol::DalAlFine(label) => {
                     if let Some(&li) = labels.get(label) {
                         if li > i {
-                            if parse_lines(
-                                sheet,
-                                sounds,
-                                labels,
-                                repeats,
-                                true,
-                                li,
-                                sheet.lines.len(),
-                            ) {
-                                return true;
-                            };
+                            elog(i + 1, "Can't find label earlier in the code.");
+                            exit(1);
                         } else {
                             if parse_lines(sheet, sounds, labels, repeats, true, li, i) {
                                 return true;
                             };
                         }
                     } else {
-                        elog(i + 1, "Can't find label");
+                        elog(i + 1, "Can't find label earlier in the code.");
                         exit(1);
                     }
                 }
